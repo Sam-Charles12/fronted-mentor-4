@@ -17,70 +17,54 @@
 <body>
   <div id="form-page">
     <div class="container">
-      <form action="index.html">
+      <form id="form" action="index.html">
         <h1>Contact Us</h1>
         <div class="s-input">
-          <div class="input">
+          <div class="input" data-error="This field is required">
             <label for="name">First Name</label>
-            <input type="text" name="name" id="" data-error="This field is required">
+            <input type="text" class="error" name="name" id="">
+            <div class="error"></div>
           </div>
-          <div class="input">
+          <div class="input" data-error="This field is required">
             <label for="name">Last Name</label>
-            <input type="text" name="name" id="" data-error="This field is required">
+            <input type="text" class="error" name="name" id="">
+            <div class="error"></div>
           </div>
         </div>
         <div class="input">
           <label for="email">Email Address</label>
           <input type="email" name="email" id="" data-error="Please enter a valid email address">
+          <div class="error"></div>
         </div>
 
         <div class="queries">
           <label for="query">Query</label>
-          <div class="s-query">
+          <div class="s-query" data-error="Please select a query type">
               <input type="radio" name="que" id="query" checked="checked">
               <label for="query">General Enquiry</label>
               <input type="radio" name="que" id="query" checked="checked">
               <label for="query">Support Request</label>
+              <div class="error"></div>
           </div>
         </div>
 
         <div class="text-box">
           <label for="message">Message</label>
-          <textarea name="" id="" ></textarea>
+          <textarea name="" id="" data-error="This field is required"></textarea>
+          <div class="error"></div>
         </div>
         <div class="agreement">
-          <input type="checkbox" name="" id="agree">
+          <input type="checkbox" name="" id="agree" data-error="This field is required">
           <label for="agree">I consent to being contacted by the team</label>
+          <div class="error"></div>
         </div>
         <div class="submit">
-          <button class="submit-btn">Submit</button>
+          <button class="submit-btn" data-error="To submit this form, please consent to being contacted">Submit</button>
+          <div class="error"></div>
         </div>
-
       </form>
-      
     </div>
   </div>
-  
-
-  
-  <!--  -->
-  
-  <!-- This field is required -->
-
-  
-  <!--  -->
-
-  <!-- This field is required -->
-
-  <!-- Please select a query type -->
-
-  <!-- This field is required -->
-
-  
-  <!-- To submit this form, please consent to being contacted -->
-
-  
-
   <!-- Message Sent! -->
   <!-- Thanks for completing the form. We'll be in touch soon! -->
   
