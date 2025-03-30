@@ -20,29 +20,29 @@
       <form id="form" action="index.html">
         <h1>Contact Us</h1>
         <div class="s-input">
-          <div class="input" data-error="This field is required">
+          <div class="input" data-error="">
             <label for="name">First Name</label>
-            <input type="text" class="error" name="name" id="">
+            <input type="text" id="firstname" name="name" >
             <div class="error"></div>
           </div>
           <div class="input" data-error="This field is required">
             <label for="name">Last Name</label>
-            <input type="text" class="error" name="name" id="">
+            <input type="text" id="lastname" name="name" >
             <div class="error"></div>
           </div>
         </div>
         <div class="input">
           <label for="email">Email Address</label>
-          <input type="email" name="email" id="" data-error="Please enter a valid email address">
+          <input type="email" name="email" id="email" data-error="Please enter a valid email address">
           <div class="error"></div>
         </div>
 
         <div class="queries">
           <label for="query">Query</label>
           <div class="s-query" data-error="Please select a query type">
-              <input type="radio" name="que" id="query" checked="checked">
+              <input type="radio" name="que" id="radio" checked="checked">
               <label for="query">General Enquiry</label>
-              <input type="radio" name="que" id="query" checked="checked">
+              <input type="radio" name="que" id="radio" checked="checked">
               <label for="query">Support Request</label>
               <div class="error"></div>
           </div>
@@ -50,7 +50,7 @@
 
         <div class="text-box">
           <label for="message">Message</label>
-          <textarea name="" id="" data-error="This field is required"></textarea>
+          <textarea name="" id="message" data-error="This field is required"></textarea>
           <div class="error"></div>
         </div>
         <div class="agreement">
@@ -59,7 +59,7 @@
           <div class="error"></div>
         </div>
         <div class="submit">
-          <button class="submit-btn" data-error="To submit this form, please consent to being contacted">Submit</button>
+          <button class="submit-btn" id="submit" data-error="To submit this form, please consent to being contacted">Submit</button>
           <div class="error"></div>
         </div>
       </form>
@@ -72,5 +72,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
