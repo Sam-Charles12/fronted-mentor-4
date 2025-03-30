@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+html{
+    font-size: 16px;
+}
+:root{
+   --green-200: hsl(148, 38%, 91%); 
+   --green-600: hsl(169, 82%, 27%); 
+
+   --red: hsl(0, 66%, 54%);
+
+   --white: hsl(0, 0%, 100%);
+
+   --grey-500: hsl(186, 15%, 59%);
+   --grey-900: hsl(187, 24%, 22%);
+}
+#form-page{
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--green-200);
+    padding: 20px 0px;
+}
+.container{
+    /* height: 60%; */
+    width: 90%;
+    max-width: 500px;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.s-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input label{
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--grey-900);
+}
+.s-input input, .input input{
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-500);
+}
+input:hover{
+    border: 1.5px solid var(--green-200);
+}
+input:focus{
+    border: 1.5px solid var(--green-600);
+    outline: none;
+    background: none;
+}
+.queries{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.queries label{
+    color: var(--grey-900);
+    font-size: .75rem;
+}
+.s-query{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: ;
+}
+.s-query 
+input[type="radio"]{
+    display: none;
+}
+.s-query label{
+    position: relative;
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--grey-900);
+    border: 1px solid var(--grey-500);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 7px;
+    cursor: pointer;
+}
+.s-query label::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--grey-900);
+    border-radius: 100%;
+}
+input[type="radio"]:checked + label{
+    background: var(--green-200);
+    border: 1px solid var(--green-600);
+}
+input[type="radio"]:checked + label::before{
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    background: var(--green-600);
+    outline: 1px solid var(--green-600);
+    border: 2px solid var(--green-200);
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-box label{ 
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--grey-900);
+}
+.text-box textarea{
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid var(--grey-500);
+    border-radius: 10px;
+}
+.text-box textarea:hover{
+    border: 1.5px solid var(--green-200);
+}
+.text-box textarea:focus{
+    outline: none;
+    border: 1.5px solid var(--green-600);
+}
+.agreement{
+    display: flex;
+    gap: 5px;
+}
+.agreement label{
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--grey-900);
+}
+.agreement input{
+    accent-color: var(--green-600);
+}
+.submit{
+    display: flex;
+    width: 100%;
+}
+.submit-btn{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background: var(--green-600);
+    color: var(--white);
+    font-weight: 400;
+    font-size: .75rem;
+    cursor: pointer;
+}
+@media screen and (min-width:780px) {
+    .s-input{
+        flex-direction: row;
+    }
+    .input{
+        width: 100%;
+    }
+    .s-query{
+        flex-direction: row;
+        width: 100%;
+    }
+    .s-query label{
+        width: 100%;
+    }
+}
