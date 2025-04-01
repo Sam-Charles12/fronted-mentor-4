@@ -158,6 +158,15 @@ input[type="radio"]:checked + label::before{
 .agreement input{
     accent-color: var(--green-600);
 }
+.agreed{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.agreement{
+    display: flex;
+    flex-direction: column;
+}
 .submit{
     display: flex;
     width: 100%;
@@ -172,6 +181,11 @@ input[type="radio"]:checked + label::before{
     font-weight: 400;
     font-size: .75rem;
     cursor: pointer;
+}
+span{
+    font-size: .75rem;
+    color: var(--red);
+    font-weight: 400;
 }
 @media screen and (min-width:780px) {
     .s-input{

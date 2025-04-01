@@ -23,18 +23,18 @@
           <div class="input" data-error="">
             <label for="name">First Name</label>
             <input type="text" id="firstname" name="name" >
-            <div class="error"></div>
+            <span id="firstname_error"></span>
           </div>
-          <div class="input" data-error="This field is required">
+          <div class="input" >
             <label for="name">Last Name</label>
             <input type="text" id="lastname" name="name" >
-            <div class="error"></div>
+            <span id="lastname_error"></span>
           </div>
         </div>
         <div class="input">
           <label for="email">Email Address</label>
           <input type="email" name="email" id="email" data-error="Please enter a valid email address">
-          <div class="error"></div>
+          <span id="email_error"></span>
         </div>
 
         <div class="queries">
@@ -44,22 +44,24 @@
               <label for="query">General Enquiry</label>
               <input type="radio" name="que" id="radio" checked="checked">
               <label for="query">Support Request</label>
-              <div class="error"></div>
+              <span id="query_error"></span>
           </div>
         </div>
 
         <div class="text-box">
           <label for="message">Message</label>
           <textarea name="" id="message" data-error="This field is required"></textarea>
-          <div class="error"></div>
+          <span id="message_error"></span>
         </div>
         <div class="agreement">
+          <div class="agreed">
           <input type="checkbox" name="" id="agree" data-error="This field is required">
           <label for="agree">I consent to being contacted by the team</label>
-          <div class="error"></div>
+        </div>
+          <span id="agree_error"></span>
         </div>
         <div class="submit">
-          <button class="submit-btn" id="submit" data-error="To submit this form, please consent to being contacted">Submit</button>
+          <button class="submit-btn" id="submit" data-error="">Submit</button>
           <div class="error"></div>
         </div>
       </form>
