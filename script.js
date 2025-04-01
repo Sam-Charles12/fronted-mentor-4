@@ -6,6 +6,7 @@ const radio = document.getElementById('radio');
 const message = document.getElementById('message');
 const agree = document.getElementById('agree');
 const submit = document.getElementById('submit');
+const success = document.getElementById('success-state')
 
 
 const firstname_error = document.getElementById('firstname_error');
@@ -47,7 +48,7 @@ form.addEventListener('submit', (e)=> {
         email_error.innerHTML = "";
         email.style.borderColor = 'hsl(169, 82%, 27%)';
     }
-    if(radio.checked){
+    if(!radio.checked){
         e.preventDefault()
         query_error.innerHTML = "Please select a query type";
     }
@@ -71,5 +72,11 @@ form.addEventListener('submit', (e)=> {
     else{
         agree_error.innerHTML = "";
         
+    }
+    if(!firstName.value === '' || !firstName.value == null || !lastName.value === '' || !lastName.value == null || email.value.match(email_check) || radio.checked || !message.value === '' || !message.value == null || agree.checked){
+        success.style.display = 'flex'
+    }
+    else{
+        success.style.display = 'none'
     }
 })

@@ -213,6 +213,18 @@ span{
     flex-direction: column;
     gap: 10px;
     display: none;
+    transition: 1s;
+    animation: only 1s ease-out;
+}
+@keyframes only{
+    from{
+        translate: 0px -10px;
+        opacity: 0;
+    }
+    to{
+        translate: 0px 0px;
+        opacity: 1;
+    }
 }
 .notif-main{
     display: flex;
