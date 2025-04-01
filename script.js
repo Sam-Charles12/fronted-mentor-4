@@ -48,13 +48,13 @@ form.addEventListener('submit', (e)=> {
         email_error.innerHTML = "";
         email.style.borderColor = 'hsl(169, 82%, 27%)';
     }
-    if(!radio.checked){
-        e.preventDefault()
-        query_error.innerHTML = "Please select a query type";
-    }
-    else{
-        query_error.innerHTML = "";
-    }
+    // if(!radio.checked){
+    //     e.preventDefault()
+    //     query_error.innerHTML = "Please select a query type";
+    // }
+    // else{
+    //     query_error.innerHTML = "";
+    // }
     if(message.value === '' || message.value == null){
         e.preventDefault()
         message_error.innerHTML = "This field is required";
