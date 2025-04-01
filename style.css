@@ -28,7 +28,6 @@ html{
     align-items: center;
     background: var(--green-200);
     padding: 20px 0px;
-    gap: 20px;
 }
 .container{
     /* height: 60%; */
@@ -213,9 +212,7 @@ span{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    position: absolute;
-    left: 50px;
-    right: 50px;
+    display: none;
 }
 .notif-main{
     display: flex;
