@@ -23,10 +23,12 @@ html{
     /* height: 100vh; */
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--green-200);
     padding: 20px 0px;
+    gap: 20px;
 }
 .container{
     /* height: 60%; */
@@ -35,6 +37,7 @@ html{
     background: var(--white);
     border-radius: 10px;
     padding: 20px;
+    position: relative;
 }
 form{
     display: flex;
@@ -201,4 +204,32 @@ span{
     .s-query label{
         width: 100%;
     }
+}
+#success-state{
+    padding: 20px;
+    background: var(--grey-900);
+    border-radius: 10px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+}
+.notif-main{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.notif-main img{
+    height: 15px;
+}
+.notif-main p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.notif-sub p{
+    font-size: .75rem;
+    font-weight: 400;
 }
